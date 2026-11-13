@@ -1,4 +1,4 @@
-const recipes = [
+const recipes = window.rangeRecipes=[
   {
     id: 1,
     title: "レンジ油うどん",
