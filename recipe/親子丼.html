@@ -8,7 +8,7 @@
     <link rel="icon" href="../images/キャラデザ（ファビコン用）.png">
     <link rel="stylesheet" href="../css/style1.css">
     <script src="../js/script.js" defer></script>
-</head>
+<link rel="stylesheet" href="../css/auth-status.css">\n</head>
 <body>
     <!----- ① ローディング画面 ----->
     <div id="loading-screen" class="loading-screen">
@@ -32,7 +32,7 @@
                 <span class="bar"></span>
             </button>
             <h1 class="header-title">Learny</h1>
-            <div style="width: 24px;"></div> 
+            <div id="auth-status" class="auth-status" data-auth-url="../auth.html"></div> 
         </header>
 
         <!-- スライドメニュー-->
@@ -142,5 +142,5 @@
     </section>
  
     </div>
-</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>\n<script src="../js/supabase-client.js"></script>\n<script src="../js/auth-status.js"></script>\n</body>
 </html>
