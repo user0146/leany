@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>〇〇だけレシピ | Leany</title>
-<link rel="stylesheet" href="css/only.css">
-<link rel="stylesheet" href="css/auth-status.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>〇〇だけレシピ | Leany</title>
+  <link rel="icon" href="images/キャラデザ（ファビコン用）.png">
+  <link rel="stylesheet" href="css/only.css">
+  <link rel="stylesheet" href="css/auth-status.css">
   <link rel="stylesheet" href="css/style.css">
 <script src="js/only.js" defer></script>
 <script src="js/range.js" defer></script>
@@ -13,6 +14,7 @@
   <script src="js/script.js" defer></script>
   <script src="js/search-all.js" defer></script>
 </head>
+
 <body>
 
   <!-- ヘッダー -->
@@ -39,8 +41,8 @@
           <li class="nav-item">
           <a href="diagnosis.html">今日のごはん診断</a>
           </li>
-          <li class="nav-item active" active>
-            <a href="../only-recipe.html" aria-current="page">〇〇だけレシピ</a>
+          <li class="nav-item active">
+            <a href="only-recipe.html" aria-current="page">〇〇だけレシピ</a>
           </li>
           <li class="nav-item">
             <a href="vegetable.html">野菜の見分け方</a>
@@ -130,5 +132,10 @@
 </button>
 <a class="back-home" href="index.html">ホームに戻る</a>
 </main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/auth-status.js"></script>
+
 </body>
 </html>
