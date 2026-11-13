@@ -10,8 +10,26 @@
 <script src="js/script.js" defer></script>
 <script src="js/search.js" defer></script>
 <link rel="stylesheet" href="css/auth-status.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body class="recipe-detail-body">
+
+ <!-- ヘッダー -->
+  <div class="home-screen">
+    <header class="app-header">
+      <h1 class="header-title">Learny</h1>
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search" aria-label="サイト内検索">
+        <button type="button" id="search-btn">🔍</button>
+      </div>
+      <div id="auth-status" class="auth-status" data-auth-url="auth.html"></div>
+
+    </header>
+
+    <div id="search-results" class="global-search-results"></div>
+
+
 <!-- ロゴ・上部タブナビゲーション -->
 <header class="site-header">
    <nav class="site-nav" aria-label="メインナビゲーション">
@@ -20,8 +38,8 @@
        <a href="index.html">Home</a>
        </li>
        <li class="nav-item">
-       <a href="recipes.html">Recipes</a>
-       </li>
+          <a href="diagnosis.html">今日のごはん診断</a>
+        </li>
        <li class="nav-item">
        <a href="only.html">〇〇だけレシピ</a>
        </li>

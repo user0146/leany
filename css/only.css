@@ -1,13 +1,19 @@
 .only-recipe-page {
-   --mint: #a8e6e6cf;
-   --wine: #5d2533;
-   --brown: #795548;
    --beige: #F3E7D3;
-   --cream: #FFF5C4;
    margin: 0;
    background: var(--beige);
    color: var(--brown);
    font-family: sans-serif;
+
+
+--cream: #fff8eb;       /* 背景 */
+  --cream-light: #fffdf7; /* カードの面 */
+  --brown: #333333;       /* 文字・線 */
+  --brown-soft: #666666;  /* 補足の文字 */
+  --mint: #a8e6cf;        /* 選択中のタブ・強調の線 */
+  --wine: #5d2533;        /* メインのボタン・エラー */
+  --wine-dark: #451a25;   /* ボタンを押した時 */
+  --line: rgba(51, 51, 51, 0.22);
 }
 
 /* ヘッダー */
