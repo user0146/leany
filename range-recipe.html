@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>レンジでレシピ | Leany</title>
+<link rel="stylesheet" href="css/range.css">
+<script src="js/range.js" defer></script>
+</head>
+<body class="range-recipe-page">
+<header class="app-header">
+<button id="hamburger-btn" class="hamburger-btn"
+           aria-label="メニューを開く" aria-expanded="false">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</button>
+<h1 class="header-title">Leany</h1>
+<div class="header-space"></div>
+</header>
+<nav id="slide-menu" class="slide-menu">
+<ul class="menu-list">
+<li><a href="index.html">🏠 ホーム</a></li>
+<li><a href="only-recipe.html">🍳 〇〇だけレシピ</a></li>
+<li><a href="range-recipe.html"> レンジでレシピ</a></li>
+<li><a href="vegetable.html">🥬 おいしい野菜の見分け方</a></li>
+<li><a href="diagnosis.html">🔍 料理提案診断</a></li>
+<li><a href="review.html">⭐ レビュー・ポイント</a></li>
+</ul>
+</nav>
+<div id="menu-overlay" class="menu-overlay"></div>
+<main class="microwave-main">
+<section class="microwave-intro">
+<h2>レンジだけで簡単クッキング！</h2>
+<p>
+
+        火を使わずに作れる、簡単レシピを紹介します。
+</p>
+</section>
+<!-- 料理一覧 -->
+<section id="dish-section">
+<h2 class="section-title">レシピ一覧</h2>
+<div id="dish-list" class="dish-list"></div>
+</section>
+<!-- レシピ詳細 -->
+<section id="recipe-detail" hidden>
+<button id="back-to-dishes" class="back-button">
+
+        ← レシピ一覧に戻る
+</button>
+<h2 id="recipe-title"></h2>
+<img id="recipe-image" class="recipe-image" alt="">
+<p id="recipe-description"></p>
+<h3>材料</h3>
+<ul id="ingredient-list"></ul>
+<h3>作り方</h3>
+<ol id="step-list"></ol>
+</section>
+</main>
+</body>
+</html>
+ 
