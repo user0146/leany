@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (loadingScreen && homeScreen && loadingTextElem) {
     const message = '読み込み中...';
-    const speed = 150; // 1文字あたりの速さ（ミリ秒）
+    const speed = 100; // 1文字あたりの速さ（ミリ秒）
     let charIndex = 0;
 
     loadingTextElem.textContent = '';

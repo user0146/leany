@@ -1,92 +1,10 @@
-/* =========================
-   全体
-========================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-.diagnosis-cook-page {
-  background-color: #F7F0DF;
-  color: #554637;
-  font-family: "Yu Gothic", sans-serif;
-}
 
-/* ヘッダー */
-.diagnosis-cook-page .app-header {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: 15px 20px;
-   background: #a8e6e6cf;
-}
-.diagnosis-cook-page .header-title {
-   margin: 0;
-   color: #5d2533;
-}
-.diagnosis-cook-page .header-space {
-   width: 36px;
-}
-.diagnosis-cook-page .hamburger-btn {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   gap: 5px;
-   width: 36px;
-   height: 36px;
-   padding: 5px;
-   border: none;
-   background: transparent;
-   cursor: pointer;
-}
-.diagnosis-cook-page .hamburger-btn .bar {
-   width: 26px;
-   height: 3px;
-   border-radius: 5px;
-   background: #5d2533;
-}
-.diagnosis-cook-page .slide-menu {
-   position: fixed;
-   top: 0;
-   left: 0;
-   z-index: 1001;
-   width: min(280px, 80%);
-   height: 100vh;
-   padding: 80px 20px 20px;
-   box-sizing: border-box;
-   background: #F3E7D3;
-   transform: translateX(-110%);
-   transition: transform 0.3s;
-}
-.diagnosis-cook-page .slide-menu.open {
-   transform: translateX(0);
-}
-.diagnosis-cook-page .menu-list {
-   padding: 0;
-   list-style: none;
-}
-.diagnosis-cook-page .menu-list a {
-   display: block;
-   padding: 14px 10px;
-   border-radius: 10px;
-   color: #5d2533;
-   text-decoration: none;
-   font-weight: bold;
-}
-.diagnosis-cook-page .menu-list a:hover {
-   background: #a8e6e6cf;
-}
-.diagnosis-cook-page .menu-overlay {
-   display: none;
-   position: fixed;
-   inset: 0;
-   z-index: 1000;
-   background: #0006;
-}
-.diagnosis-cook-page .menu-overlay.show {
-   display: block;
-}
+
+
+
+
+
 
 /* =========================
    メイン
@@ -258,17 +176,7 @@
   display: none;
 }
 
-/* =========================
-   フッター
-========================= */
 
-footer {
-  text-align: center;
-  background-color: #a8e6e6cf;
-  padding: 20px;
-  margin-top: 50px;
-  color: #554637;
-}
 
 /* =========================
    スマホ対応
