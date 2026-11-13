@@ -2,11 +2,13 @@
 
 1. **作業開始前**
 * 最新状態を取得(PULL)
+* Githubから同期する ←みことちゃんだけ
 2. **作業中**
 * VS Codeで編集
 3. **作業終了** 
 * Commit・Push
-* （提出 Pull Request）
+* 提出 Pull Request ← みことちゃんだけ
+* (user0416/leanyのナビにあるプルリクエストからNew pull requests押して、送信)
 
 
 -------
