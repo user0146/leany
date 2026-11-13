@@ -5,29 +5,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>〇〇だけレシピ | Leany</title>
 <link rel="stylesheet" href="css/only.css">
+<link rel="stylesheet" href="css/auth-status.css">
+  <link rel="stylesheet" href="static/css/style.css">
 <script src="js/only.js" defer></script>
 </head>
-<body class="only-recipe-page">
-<header class="app-header">
-<button id="hamburger-btn" class="hamburger-btn"
-           aria-label="メニューを開く" aria-expanded="false">
-<span class="bar"></span>
-<span class="bar"></span>
-<span class="bar"></span>
-</button>
-<h1 class="header-title">Leany</h1>
-<div class="header-space"></div>
-</header>
-<nav id="slide-menu" class="slide-menu">
-<ul class="menu-list">
-<li><a href="index.html">🏠 ホーム</a></li>
-<li><a href="only-recipe.html">🍳 〇〇だけレシピ</a></li>
-<li><a href="range-recipe.html"> レンジでレシピ</a></li>
-<li><a href="vegetable.html">🥬 おいしい野菜の見分け方</a></li>
-<li><a href="diagnosis.html">🔍 料理提案診断</a></li>
-<li><a href="review.html">⭐ レビュー・ポイント</a></li>
-</ul>
-</nav>
+
+
+  <!-- ヘッダー -->
+  <div class="home-screen">
+    <header class="app-header">
+      <h1 class="header-title">Learny</h1>
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search" aria-label="サイト内検索">
+        <button type="button" id="search-btn">🔍</button>
+      </div>
+      <div id="auth-status" class="auth-status" data-auth-url="auth.html"></div>
+
+    </header>
+
+    <div id="search-results" class="global-search-results"></div>
+
+    <!-- ナビゲーション -->
+    <header class="site-header">
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="recipe/じゃがチーズ.html">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a href="../only-recipe.html">〇〇だけレシピ</a>
+          </li>
+          <li class="nav-item active">
+            <a href="vegetable.html" aria-current="page">野菜の見分け方</a>
+          </li>
+          <li class="nav-item">
+            <a href="diet.html">ダイエット</a>
+          </li>
+          <li class="nav-item">
+            <a href="材料4つ以内レシピ.html">
+              材料４つ以内レシピ</a>
+          </li>
+          <li class="nav-item">
+            <a href="range-recipe.html">レンジでレシピ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
 <div id="menu-overlay" class="menu-overlay"></div>
 <main class="only-main">
 <section class="page-intro">
