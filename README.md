@@ -6,7 +6,7 @@
 * VS Codeで編集
 3. **作業終了** 
 * Commit・Push
-* （提出 Pull Request）
+* 提出 Pull Request 
 
 
 -------
