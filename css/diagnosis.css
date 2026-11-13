@@ -176,17 +176,7 @@
   display: none;
 }
 
-/* =========================
-   フッター
-========================= */
 
-footer {
-  text-align: center;
-  background-color: #a8e6e6cf;
-  padding: 20px;
-  margin-top: 50px;
-  color: #554637;
-}
 
 /* =========================
    スマホ対応
