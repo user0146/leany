@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>料理診断 | Leany</title>
+<link rel="stylesheet" href="css/diagnosis.css">
+</head>
+<body class="diagnosis-cook-page">
+<header class="app-header">
+<button id="hamburger-btn" class="hamburger-btn" 
+          aria-label="メニューを開く" aria-expanded="false">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</button>
+<h1 class="header-title">Leany</h1>
+<div class="header-space"></div>
+</header>
+<!--メニューバー-->
+<nav id="slide-menu" class="slide-menu">
+<ul class="menu-list">
+<li><a href="index.html">🏠 ホーム</a></li>
+<li><a href="only-recipe.html">🍳 ○○だけレシピ</a></li>
+<li><a href="range-recipe.html">レンジでレシピ</a></li>
+<li><a href="vegetable.html">🥬 おいしい野菜の見分け方</a></li>
+<li><a href="diagnosis.html">🔍 料理提案診断</a></li>
+<li><a href="review.html">⭐ レビュー・ポイント</a></li>
+</ul>
+</nav>
+<div id="menu-overlay" class="menu-overlay"></div>
+<main>
+<!-- ここから診断ページの内容 -->
+</main>
+<script src="js/diagnosis.js" defer></script>
+</body>
+<!-- メイン -->
+<main class="main">
+<section class="intro">
+<p class="sub-title">TODAY'S MENU</p>
+<h1>今日のごはん診断</h1>
+<p>
+       今の気分やおなかのすき具合から<br>
+       あなたにぴったりの料理を提案します！
+</p>
+</section>
+<!-- 診断フォーム -->
+<section class="diagnosis-box">
+<h2>4つの質問に答えてね！</h2>
+<form id="diagnosisForm">
+<!-- 質問1 -->
+<div class="question">
+<h3>Q1. 今日の優先事項は？</h3>
+<label>
+<input type="radio" name="priority" value="quick" required>
+           時短・楽に作りたい
+</label>
+<label>
+<input type="radio" name="priority" value="healthy">
+           優しくヘルシーな料理がいい
+</label>
+</div>
+<!-- 質問2 -->
+<div class="question">
+<h3>Q2. おなかのすき具合は？</h3>
+<label>
+<input type="radio" name="hunger" value="hungry" required>
+           ペコペコ！（しっかりメイン）
+</label>
+<label>
+<input type="radio" name="hunger" value="light">
+           そこまで！（スープや軽食）
+</label>
+</div>
+<!-- 質問3 -->
+<div class="question">
+<h3>Q3. 今日の気力は？</h3>
+<label>
+<input type="radio" name="energy" value="easy" required>
+           ほぼゼロ！（レンジ・ハサミのみ）
+</label>
+<label>
+<input type="radio" name="energy" value="normal">
+           ちょっと動ける！（フライパンOK）
+</label>
+</div>
+<!-- 質問4 -->
+<div class="question">
+<h3>Q4. 舌の気分は？</h3>
+<label>
+<input type="radio" name="taste" value="rich" required>
+           がっつり！（旨辛・中華）
+</label>
+<label>
+<input type="radio" name="taste" value="light">
+           さっぱり！（和風・ポン酢）
+</label>
+</div>
+<button type="submit" class="diagnosis-btn">
+         診断する！
+</button>
+</form>
+</section>
+<!-- 診断結果 -->
+<section id="result" class="result hidden">
+<p class="sub-title">YOUR RESULT</p>
+<h2>あなたにおすすめの料理は...</h2>
+<p id="resultType" class="result-type"></p>
+<div id="recipeList" class="recipe-list"></div>
+<button id="retryBtn" class="retry-btn">
+       もう一度診断する
+</button>
+</section>
+</main>
+<footer>
+<p>© Learny</p>
+</footer>
+<script src="js/diagnosis.js" defer></script>
+</body>
+</html>

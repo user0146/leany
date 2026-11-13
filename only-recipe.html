@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>〇〇だけレシピ | Leany</title>
+<link rel="stylesheet" href="css/only.css">
+<script src="js/only.js" defer></script>
+</head>
+<body class="only-recipe-page">
+<header class="app-header">
+<button id="hamburger-btn" class="hamburger-btn"
+           aria-label="メニューを開く" aria-expanded="false">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</button>
+<h1 class="header-title">Leany</h1>
+<div class="header-space"></div>
+</header>
+<nav id="slide-menu" class="slide-menu">
+<ul class="menu-list">
+<li><a href="index.html">🏠 ホーム</a></li>
+<li><a href="only-recipe.html">🍳 〇〇だけレシピ</a></li>
+<li><a href="range-recipe.html"> レンジでレシピ</a></li>
+<li><a href="vegetable.html">🥬 おいしい野菜の見分け方</a></li>
+<li><a href="diagnosis.html">🔍 料理提案診断</a></li>
+<li><a href="review.html">⭐ レビュー・ポイント</a></li>
+</ul>
+</nav>
+<div id="menu-overlay" class="menu-overlay"></div>
+<main class="only-main">
+<section class="page-intro">
+<p class="intro-label">EASY COOKING</p>
+<h2>〇〇だけレシピ</h2>
+<p>身近な食材で、簡単おいしい料理！</p>
+</section>
+<!-- 4つのカテゴリー -->
+<section class="category-section" id="categories">
+<h2 class="section-heading">カテゴリーから選ぶ</h2>
+<div class="category-grid">
+<button class="category-card" data-category="seasoned">
+<span class="category-icon">🍗</span>
+<span>味付き商品</span>
+<small>サラダチキンなど</small>
+</button>
+<button class="category-card" data-category="canned">
+<span class="category-icon">🥫</span>
+<span>缶詰</span>
+<small>ツナ缶・サバ缶など</small>
+</button>
+<button class="category-card" data-category="frozen">
+<span class="category-icon">❄️</span>
+<span>コンビニ冷凍食品</span>
+<small>冷凍食品をアレンジ</small>
+</button>
+<button class="category-card" data-category="vegetables">
+<span class="category-icon">🥬</span>
+<span>カット野菜</span>
+<small>野菜を手軽に活用</small>
+</button>
+</div>
+</section>
+<!-- カテゴリーを押すと料理名が表示される -->
+<section class="dish-section" id="dish-section" hidden>
+<h2 class="section-heading" id="category-title">
+           料理一覧
+</h2>
+<p class="section-description">気になる料理を選んでね！</p>
+<div id="dish-list" class="dish-list"></div>
+</section>
+<!-- 料理名を押すとレシピが表示される -->
+<section class="recipe-detail" id="recipe-detail" hidden>
+<p class="detail-label">RECIPE</p>
+<img 
+     id="recipe-image"
+     class="recipe-image"
+     src="images/butakyabe.jpg"
+     alt="豚キャベツ"
+>
+<h2 id="recipe-title"></h2>
+<p id="recipe-description"></p>
+<div class="detail-box">
+<h3>🥣 材料</h3>
+<ul id="ingredient-list"></ul>
+</div>
+<div class="detail-box">
+<h3>👩‍🍳 作り方</h3>
+<ol id="step-list"></ol>
+</div>
+<button id="back-to-dishes" class="back-button">
+           ← 料理一覧に戻る
+</button>
+</section>
+<button id="back-to-categories" class="back-button" hidden>
+       ← カテゴリーに戻る
+</button>
+<a class="back-home" href="index.html">ホームに戻る</a>
+</main>
+</body>
+</html>
