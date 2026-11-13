@@ -260,8 +260,8 @@ h2{font-size:clamp(27px,3.5vw,39px);
    margin:0
 }
 .hero-photo{
-   width:min(380px,85vw);
-   height:380px;
+   width:900px;
+   height:auto;
    object-fit:cover;
    object-position:center;
    border-radius:0;
@@ -976,14 +976,6 @@ margin-top: 10px;
   position: relative;
 }
 
-.hero-photo {
-  width: min(380px, 85vw);
-  height: 380px;
-  object-fit: cover;
-  display: block;
-  margin: 18px auto;
-}
-
 .benefits {
   background: #fcf8ef;
 }
@@ -1033,6 +1025,7 @@ margin-top: 10px;
   }
 
   .hero-photo {
-    height: 280px;
+    width: 450px;
+    height: 300px;
   }
 }
