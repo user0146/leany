@@ -5,6 +5,16 @@
   padding: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+:root {
+    --mintgreen:#a8e6cf;
+    --white:#fff;
+    --brawn:#333;
+    --brown:#333;
+    --green:#2d5a43;
+    --winered:#5d2533;
+    --wine:#5d2533;
+    --cream:#fff8eb
+}
 
 html {
   scroll-behavior: smooth;
@@ -258,305 +268,175 @@ img {
 }
 
 
-
-
-
-
-
 /* 自分用*/
 
 .main-content {
-
   width: 100%;
-
   max-width: 1400px;
-
   margin: 0 auto;
-
   padding: 20px;
-
 }
 
 .recipe-grid {
-
   display: grid;
-
   grid-template-columns: repeat(2, minmax(0, 1fr));
-
   gap: 15px;
-
 }
 
 .recipe-card {
-
   min-width: 0;
-
   background: #fff;
-
   border-radius: 8px;
-
   overflow: hidden;
-
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-
   display: flex;
-
   flex-direction: column;
-
   transition: transform 0.2s, box-shadow 0.2s;
-
 }
 
 .recipe-card:hover {
-
   transform: translateY(-4px);
-
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-
 }
 
 .card-content {
-
   padding: 12px;
-
   display: flex;
-
   flex-direction: column;
-
   flex-grow: 1;
-
 }
 
 .card-content h3 {
-
   font-size: 0.95rem;
-
   margin-bottom: 6px;
-
   color: #333;
-
   line-height: 1.4;
-
 }
 
 .card-subtitle {
-
   font-size: 0.8rem;
-
   color: #666;
-
   margin-bottom: 10px;
-
   flex-grow: 1;
-
 }
 
 .view-btn {
-
   display: inline-block;
-
   padding: 8px 18px;
-
   background-color: #88c9b3;
-
   color: #2d5a43;
-
   border: none;
-
   border-radius: 20px;
-
   font-weight: bold;
-
   cursor: pointer;
-
   font-size: 0.85rem;
-
   white-space: nowrap;
-
   transition: transform 0.2s, background-color 0.2s;
-
 }
 
 .view-btn:hover {
-
   background-color: #a8e6cf;
-
   transform: scale(1.03);
-
 }
 
 /* おすすめレシピのスライダー */
 
 .carousel-containar {
-
   position: relative;
-
   width: 100%;
-
   max-width: 1100px;
-
   margin: 20px auto 30px;
-
   padding: 0;
-
 }
 
 .slider-wrapper {
-
   position: relative;
-
   width: 100%;
-
   overflow: hidden;
-
   border-radius: 16px;
-
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-
   background-color: #5d2533;
-
 }
 
 .slide-card {
-
   display: none;
-
   grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-
   align-items: stretch;
-
   color: #fff;
-
   width: 100%;
-
   min-height: 420px;
-
 }
 
 .slide-card.active {
-
   display: grid;
-
   animation: fadeIn 0.4s ease-in-out;
-
 }
 
 @keyframes fadeIn {
-
   from { opacity: 0; }
-
   to { opacity: 1; }
-
 }
 
 .slide-image {
-
   width: 100%;
-
   height: 420px;
-
   min-height: 420px;
-
   overflow: hidden;
-
   background-color: #5d2533;
-
 }
 
 .slide-image img {
-
   display: block;
-
   width: 100%;
-
   height: 100%;
-
   object-fit: cover;
-
   object-position: center;
-
 }
 
 .slide-info {
-
   min-width: 0;
-
   padding: 30px;
-
   display: flex;
-
   flex-direction: column;
-
   justify-content: center;
-
   background-color: #5d2533;
-
 }
 
 .slide-info h2 {
-
   font-size: 1.6rem;
-
   margin-bottom: 8px;
-
   color: #fff;
-
   line-height: 1.5;
-
 }
 
 .slide-sub {
-
   font-size: 0.95rem;
-
   color: #fff7d2;
-
   margin-bottom: 10px;
-
 }
 
 .slide-desc {
-
   font-size: 0.95rem;
-
   color: #eee;
-
   margin-bottom: 20px;
-
 }
 
 .slider-arrow {
-
   display: none;
-
   position: absolute;
-
   top: 50%;
-
   transform: translateY(-50%);
-
   width: 40px;
-
   height: 40px;
-
   background-color: rgba(255, 255, 255, 0.9);
-
   border: none;
-
   border-radius: 50%;
-
   font-size: 1.1rem;
-
   font-weight: bold;
-
   color: #333;
-
   cursor: pointer;
-
   z-index: 10;
-
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-
 }
 
 .slider-arrow.prev { left: 15px; }
@@ -564,41 +444,25 @@ img {
 .slider-arrow.next { right: 15px; }
 
 .dots-container {
-
   display: flex;
-
   justify-content: center;
-
   gap: 10px;
-
   margin-top: 14px;
-
 }
 
 .dot {
-
   width: 10px;
-
   height: 10px;
-
   background-color: #ccc;
-
   border: none;
-
   border-radius: 50%;
-
   cursor: pointer;
-
   transition: background-color 0.3s, transform 0.3s;
-
 }
 
 .dot.active {
-
   background-color: #7a4a32;
-
   transform: scale(1.2);
-
 }
  
 /* ==========================================
