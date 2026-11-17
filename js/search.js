@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div style="padding: 10px; display: flex; flex-direction: column; flex-grow: 1;">
                             <h4 style="font-size: 0.9rem; margin-bottom: 5px; color: #333; line-height: 1.3;">${recipe.title}</h4>
                             <p style="font-size: 0.75rem; color: #666; margin-bottom: 10px; flex-grow: 1;">${recipe.subtitle || ''}</p>
-                            <a href="diet.html?id=${encodeURIComponent(id)}" style="display: inline-block; text-align: center; background: #88c9b3; padding: 6px 10px; border-radius: 15px; font-size: 0.75rem; font-weight: bold; text-decoration: none; color: #fff;">レシピを見る</a>
+                            <a href="recipe/${id}.html" style="display: inline-block; text-align: center; background: #88c9b3; padding: 6px 10px; border-radius: 15px; font-size: 0.75rem; font-weight: bold; text-decoration: none; color: #fff;">レシピを見る</a>
                         </div>
                     </div>
                 `;

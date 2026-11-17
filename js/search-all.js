@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let targetUrl = `${basePath}${sourceInfo.pageUrl}?title=${encodeURIComponent(title)}`;
             if (sourceInfo.pageUrl === 'diet.html' && id) {
-                targetUrl = `${basePath}diet.html?id=${encodeURIComponent(id)}`;
+                targetUrl = `${basePath}recipe/${id}.html`;
             } else if (id) {
                 targetUrl += `&id=${encodeURIComponent(id)}`;
             }
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     description: r.subtitle || '',
                     image: r.image ? `${basePath}${r.image}` : '',
                     searchBlob: `${r.title || ''} ${r.subtitle || ''} ${ingNames}`.toLowerCase(),
-                    url: `${basePath}diet.html?id=${encodeURIComponent(id)}`,
+                    url: `${basePath}recipe/${id}.html`,
                     categoryLabel: 'ダイエット'
                 });
             });

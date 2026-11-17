@@ -517,7 +517,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 【詳細表示モード】
 
-    renderRecipeDetail(selectedId);
+    location.replace("recipe/" + selectedId + ".html");
 
   } else {
 
@@ -595,7 +595,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       card.onclick = () => {
 
-        window.location.href = `diet.html?id=${encodeURIComponent(key)}`;
+        window.location.href = `recipe/${key}.html`;
 
       };
 
