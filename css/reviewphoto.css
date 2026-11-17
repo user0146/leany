@@ -1,11 +1,11 @@
 /* レビュー欄に足した部品のCSS（既存の style1.css のレビュー用の装飾はそのまま使えます） */
 .review-section {
-  --rv-brown: #5B3F2E;
-  --rv-brown-soft: #7A5E4C;
-  --rv-mint: #A9D8BF;
-  --rv-wine: #7B2D3B;
-  --rv-wine-dark: #62222E;
-  --rv-line: rgba(91, 63, 46, 0.22);
+  --rv-brown: #333333;
+  --rv-brown-soft: #666666;
+  --rv-mint: #a8e6cf;
+  --rv-wine: #5d2533;
+  --rv-wine-dark: #451a25;
+  --rv-line: rgba(51, 51, 51, 0.22);
 }
 
 .review-section [hidden] { display: none; }
@@ -103,7 +103,7 @@
   cursor: pointer;
 }
 
-.rv-delete:hover { background: var(--rv-wine); color: #FBF6EA; }
+.rv-delete:hover { background: var(--rv-wine); color: #fff8eb; }
 
 .review-section :focus-visible {
   outline: 3px solid var(--rv-mint);
