@@ -1,4 +1,10 @@
+/* すべての要素のサイズ計算をパディング込みにする */
+* {
+  box-sizing: border-box;
+}
+
 body {
+   margin: 0;
    width: 100%;
    min-height: 100vh;
    background-color: #f7faf8;
@@ -8,7 +14,7 @@ body {
    display: none !important;
 }
 
-/*---------------------------!!!!追加部分!!!!---------------------------*/
+/* ------共通カラー設定--------- */
 :root {
     --mintgreen:#a8e6cf;
     --white:#fff;
@@ -21,7 +27,6 @@ body {
 }
 
 
-/*--------!!追加ここまで!!---------*/
 
 
 /* ------ローディング画面--------- */
@@ -85,8 +90,8 @@ body {
 /* -------------ヘッダー 三本線（ハンバーガー）メニュー------*/
 .app-header {
    background-color: #a8e6cf; /* ミントグリーン */
-   height: 56px;
-   padding: 0 16px;
+   height: 70px;  /*縦幅*/
+   padding: 0 16px;/*左右の余白*/
    display: flex;
    align-items: center;
    justify-content: space-between;
