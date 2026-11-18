@@ -1,0 +1,22 @@
+/* ダイエットレシピのページにだけ足した部品（サブタイトルと、一覧に戻るリンク） */
+.menu-subtitle {
+  margin: -22px 16px 28px;
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.back-to-list {
+  margin: 8px 16px 40px;
+  text-align: center;
+}
+
+.back-to-list a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #a8e6cf;
+  color: #5d2533;
+  font-weight: bold;
+  text-decoration: none;
+}

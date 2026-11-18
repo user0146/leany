@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ダイエットレシピ - Learny</title>
-  <link rel="icon" href="images/キャラデザ（ファビコン用）.png">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/diet.js" defer></script>
-  <script src="js/script.js" defer></script>
-  <script src="js/search.js" defer></script>
-  <link rel="stylesheet" href="css/auth-status.css">
-  <div id="auth-status" class="auth-status" data-auth-url="auth.html"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ダイエットレシピ | Learny</title>
+
+    <link rel="icon" href="images/キャラデザ（ファビコン用）.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth-status.css">
+
+    <script src="js/diet.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/search.js" defer></script>
 </head>
+
 <body class="recipe-detail-body">
+
+ <!-- ヘッダー -->
+  <div class="home-screen">
+    <header class="app-header">
+      <h1 class="header-title">Learny</h1>
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search" aria-label="サイト内検索">
+        <button type="button" id="search-btn">🔍</button>
+      </div>
+
+      <div id="auth-status" class="auth-status" data-auth-url="auth.html"></div>
+    </header>
+
+    <div id="search-results" class="global-search-results"></div>
+
+
 <!-- ロゴ・上部タブナビゲーション -->
 <header class="site-header">
    <nav class="site-nav" aria-label="メインナビゲーション">
@@ -21,8 +39,8 @@
        <a href="index.html">Home</a>
        </li>
        <li class="nav-item">
-       <a href="recipes.html">Recipes</a>
-       </li>
+          <a href="diagnosis.html">今日のごはん診断</a>
+        </li>
        <li class="nav-item">
        <a href="only-recipe.html">〇〇だけレシピ</a>
        </li>
@@ -30,7 +48,7 @@
        <a href="vegetable.html">野菜の見分け方</a>
        </li>
        <li class="nav-item active">
-       <a href="diet.html" aria-current="page">ダイエット</a>
+       <a href="diet.html" aria-current="page">ダイエットレシピ</a>
        </li>
        <li class="nav-item">
        <a href="材料4つ以内レシピ.html">材料４つ以内レシピ</a>
@@ -43,6 +61,7 @@
        </li>
      </ul>
    </nav>
+
 </header>
    
 <div class="global-search" style="display: flex; justify-content: center; align-items: center; gap: 5px; padding: 15px 5%;">
@@ -138,9 +157,10 @@
 </article>
 </div>
 </section>
-
+  </div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/supabase-client.js"></script>
 <script src="js/auth-status.js"></script>
 </body>
+
 </html>

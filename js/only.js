@@ -1,22 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-   // メニューバー
-   const menuButton = document.getElementById("hamburger-btn");
-   const menu = document.getElementById("slide-menu");
-   const overlay = document.getElementById("menu-overlay");
+    // メニューバー（要素が存在する場合のみ実行）
+    const menuButton = document.getElementById("hamburger-btn");
+    const menu = document.getElementById("slide-menu");
+    const overlay = document.getElementById("menu-overlay");
 
-   function closeMenu() {
-       menu.classList.remove("open");
-       overlay.classList.remove("show");
-       menuButton.setAttribute("aria-expanded", "false");
-   }
-   menuButton.addEventListener("click", () => {
-       const isOpen = menu.classList.toggle("open");
-       overlay.classList.toggle("show", isOpen);
-       menuButton.setAttribute("aria-expanded", isOpen);
-   });
-   overlay.addEventListener("click", closeMenu);
+    if (menuButton && menu && overlay) {
+        function closeMenu() {
+            menu.classList.remove("open");
+            overlay.classList.remove("show");
+            menuButton.setAttribute("aria-expanded", "false");
+        }
+
+        menuButton.addEventListener("click", () => {
+            const isOpen = menu.classList.toggle("open");
+            overlay.classList.toggle("show", isOpen);
+            menuButton.setAttribute("aria-expanded", isOpen);
+        });
+
+        overlay.addEventListener("click", closeMenu);
+    }
    // カテゴリーごとのレシピ
-   const recipes = {
+   const recipes ={
        seasoned: [
            {
                id: "味付き食品",

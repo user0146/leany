@@ -1,33 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>材料4つ以内レシピ | Learny</title>
-
-  <link rel="icon" href="static/images/lion.jpeg">
-  <link rel="stylesheet" href="static/css/style.css">
-  <script src="static/js/script.js" defer></script>
-  
-  <link rel="stylesheet" href="css/auth-status.css">
-  <div id="auth-status" class="auth-status" data-auth-url="auth.html"></div>
+  <link rel="icon" href="images/キャラデザ（ファビコン用）.png">
+  <link rel="stylesheet" href="css/style.css">
+<script src="js/diet.js" defer></script>
+<script src="js/script.js" defer></script>
+<script src="js/search.js" defer></script>
+<script src="js/only.js" defer></script>
+<script src="js/range.js" defer></script>
+<script src="js/search-all.js" defer></script>
+<link rel="stylesheet" href="css/auth-status.css">
 </head>
 
 <body>
 
+  
+
   <!-- ヘッダー -->
   <div class="home-screen">
-
     <header class="app-header">
       <h1 class="header-title">Learny</h1>
-
       <div class="search-box">
         <input type="text" id="search-input" placeholder="Search" aria-label="サイト内検索">
         <button type="button" id="search-btn">🔍</button>
       </div>
+      <div id="auth-status" class="auth-status" data-auth-url="auth.html"></div>
+
     </header>
+    <div id="search-results" class="global-search-results"></div>
 
     <!-- ナビゲーション -->
     <header class="site-header">
@@ -36,11 +39,9 @@
           <li class="nav-item">
             <a href="index.html">Home</a>
           </li>
-
           <li class="nav-item">
-            <a href="/recipe">Recipes</a>
-          </li>
-
+          <a href="diagnosis.html">今日のごはん診断</a>
+        </li>
           <li class="nav-item">
             <a href="only-recipe.html">〇〇だけレシピ</a>
           </li>
@@ -48,7 +49,7 @@
             <a href="vegetable.html">野菜の見分け方</a>
           </li>
           <li class="nav-item">
-            <a href="diet.html">ダイエット</a>
+            <a href="diet.html">ダイエットレシピ</a>
           </li>
           <li class="nav-item active">
             <a href="材料4つ以内レシピ.html" aria-current="page">材料４つ以内レシピ</a>
@@ -59,7 +60,6 @@
           <li class="nav-item">
             <a href="diagnosis.html">料理診断</a>
           </li>
-
         </ul>
       </nav>
     </header>
@@ -75,18 +75,13 @@
 
         <p class="eyebrow">EASY RECIPE</p>
 
-        <h1>食材4つ以内レシピ</h1>
+        <h1>材料4つ以内レシピ</h1>
 
         <p class="tagline">
           少ない食材で、ちゃんとおいしい。
         </p>
 
-        <img
-          class="hero-photo"
-          src="images/do-nn.jpg"
-          alt="材料4つ以内の料理"
-        >
-
+      
         <div class="hero-note">
           冷蔵庫にあるもので、ぱぱっと一品。<br>
           食材4つ以内で作れる、お手軽レシピを集めました。
@@ -330,10 +325,10 @@
             </article>
           </a>
 
-          <a href="recipe/バター醬油チャーハン.html" class="recipe-link">
+          <a href="recipe/バター醤油チャーハン.html" class="recipe-link">
             <article class="recipe-card" data-category="ごはん">
               <div class="photo-wrap">
-                <img src="images/バター醬油チャーハン.jpg" alt="バター醤油チャーハン" loading="lazy">
+                <img src="images/バター醤油チャーハン.jpg" alt="バター醤油チャーハン" loading="lazy">
                 <span class="category">ごはん</span>
               </div>
               <h3>バター醤油チャーハン</h3>
@@ -386,6 +381,9 @@
     </main>
 
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/auth-status.js"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>

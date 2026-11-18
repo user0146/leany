@@ -1,13 +1,19 @@
 .only-recipe-page {
-   --mint: #a8e6e6cf;
-   --wine: #5d2533;
-   --brown: #795548;
-   --beige: #F3E7D3;
-   --cream: #FFF5C4;
-   margin: 0;
-   background: var(--beige);
-   color: var(--brown);
-   font-family: sans-serif;
+
+    --mint: #a8e6cf;
+    --wine: #5d2533;
+    --brown: #795548;
+    --beige: #F3E7D3;
+    --cream: #FFF5C4;
+    --cream-light: #fffdf7;
+    --brown-soft: #666666;
+    --wine-dark: #451a25;
+    --line: rgba(51, 51, 51, 0.22);
+
+    margin: 0;
+    background: var(--beige);
+    color: var(--brown);
+    font-family: sans-serif;
 }
 
 /* ヘッダー */

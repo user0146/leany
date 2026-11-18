@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>野菜の見分け方 | Learny</title>
-  <link rel="icon" href="static/images/lion.jpeg">
-  <link rel="stylesheet" href="static/css/style.css">
-  <script src="static/js/script.js" defer></script>
+  <link rel="icon" href="images/キャラデザ（ファビコン用）.png">
+  <link rel="stylesheet" href="css/style.css">
+<script src="js/only.js" defer></script>
+<script src="js/range.js" defer></script>
+  <script src="js/diet.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/search-all.js" defer></script>
   <link rel="stylesheet" href="css/auth-status.css">
-  <div id="auth-status" class="auth-status" data-auth-url="auth.html"></div>
 </head>
 
 <body>
-
   <!-- ヘッダー -->
   <div class="home-screen">
     <header class="app-header">
@@ -21,6 +23,8 @@
         <input type="text" id="search-input" placeholder="Search" aria-label="サイト内検索">
         <button type="button" id="search-btn">🔍</button>
       </div>
+      <div id="auth-status" class="auth-status" data-auth-url="auth.html"></div>
+
     </header>
 
     <div id="search-results" class="global-search-results"></div>
@@ -33,7 +37,7 @@
             <a href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a href="recipe/">Recipes</a>
+          <a href="diagnosis.html">今日のごはん診断</a>
           </li>
           <li class="nav-item">
             <a href="only-recipe.html">〇〇だけレシピ</a>
@@ -42,7 +46,7 @@
             <a href="vegetable.html" aria-current="page">野菜の見分け方</a>
           </li>
           <li class="nav-item">
-            <a href="diet.html">ダイエット</a>
+            <a href="diet.html">ダイエットレシピ</a>
           </li>
           <li class="nav-item">
             <a href="材料4つ以内レシピ.html">材料４つ以内レシピ</a>
@@ -71,7 +75,7 @@
         <p class="tagline"></p>
  
         <img class="hero-photo"
-             src="static/images/やさい.jpg"
+             src="images/やさい.jpg"
              alt="野菜">
  
         <div class="hero-note">
@@ -149,7 +153,7 @@
                    data-keywords="蕃茄">
  
             <div class="vegetable-image">
-              <img src="static/images/トマト.jpg" alt="トマト">
+              <img src="images/トマト.jpg" alt="トマト">
             </div>
  
             <h3 class="vegetable-name">トマト</h3>
@@ -168,7 +172,7 @@
                    data-keywords="ハクサイ">
  
             <div class="vegetable-image">
-              <img src="static/images/白菜.jpg" alt="白菜">
+              <img src="images/白菜.jpg" alt="白菜">
             </div>
  
             <h3 class="vegetable-name">白菜</h3>
@@ -187,7 +191,7 @@
                    data-keywords="玉葱 たま葱">
  
             <div class="vegetable-image">
-              <img src="static/images/玉ねぎ.jpg" alt="玉ねぎ">
+              <img src="images/玉ねぎ.jpg" alt="玉ねぎ">
             </div>
  
             <h3 class="vegetable-name">玉ねぎ</h3>
@@ -206,7 +210,7 @@
                    data-keywords="萵苣 ちしゃ">
  
             <div class="vegetable-image">
-              <img src="static/images/レタス.jpg" alt="レタス">
+              <img src="images/レタス.jpg" alt="レタス">
             </div>
  
             <h3 class="vegetable-name">レタス</h3>
@@ -225,7 +229,7 @@
                    data-keywords="法蓮草 菠薐草">
  
             <div class="vegetable-image">
-              <img src="static/images/ほうれん草.jpg" alt="ほうれん草">
+              <img src="images/ほうれん草.jpg" alt="ほうれん草">
             </div>
  
             <h3 class="vegetable-name">ほうれん草</h3>
@@ -244,7 +248,7 @@
                    data-keywords="緑花椰菜">
  
             <div class="vegetable-image">
-              <img src="static/images/ブロッコリー.jpg" alt="ブロッコリー">
+              <img src="images/ブロッコリー.jpg" alt="ブロッコリー">
             </div>
  
             <h3 class="vegetable-name">ブロッコリー</h3>
@@ -263,7 +267,7 @@
                    data-keywords="甘唐辛子">
  
             <div class="vegetable-image">
-              <img src="static/images/ピーマン.jpg" alt="ピーマン">
+              <img src="images/ピーマン.jpg" alt="ピーマン">
             </div>
  
             <h3 class="vegetable-name">ピーマン</h3>
@@ -283,7 +287,7 @@
                    data-keywords="葱 ネギ">
  
             <div class="vegetable-image">
-              <img src="static/images/ねぎ.jpg" alt="ねぎ">
+              <img src="images/ねぎ.jpg" alt="ねぎ">
             </div>
  
             <h3 class="vegetable-name">ねぎ</h3>
@@ -303,7 +307,7 @@
                    data-keywords="馬鈴薯 ばれいしょ ジャガ芋">
  
             <div class="vegetable-image">
-              <img src="static/images/じゃがいも.jpg" alt="じゃがいも">
+              <img src="images/じゃがいも.jpg" alt="じゃがいも">
             </div>
  
             <h3 class="vegetable-name">じゃがいも</h3>
@@ -322,7 +326,7 @@
                    data-keywords="胡瓜">
  
             <div class="vegetable-image">
-              <img src="static/images/きゅうり.jpg" alt="きゅうり">
+              <img src="images/きゅうり.jpg" alt="きゅうり">
             </div>
  
             <h3 class="vegetable-name">きゅうり</h3>
@@ -341,7 +345,7 @@
                    data-keywords="甘藍 かんらん">
  
             <div class="vegetable-image">
-              <img src="static/images/キャベツ.jpg" alt="キャベツ">
+              <img src="images/キャベツ.jpg" alt="キャベツ">
             </div>
  
             <h3 class="vegetable-name">キャベツ</h3>
