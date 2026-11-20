@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   
+
   // =====================================
   // ④ レシピの絞り込み機能
   // =====================================
@@ -136,12 +137,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // レシピを絞り込む
       recipeLinks.forEach(link => {
-        const card = link.querySelector('.recipe-card') || link;
-        link.hidden = value !== 'all' && card.dataset.category !== value;
+
+        const category = link.dataset.category;
+
+        if (selectedCategory === 'all' || category === selectedCategory) {
+          link.hidden = false;
+        } else {
+          link.hidden = true;
+        }
+
       });
 
     });
   });
+
 
 
 
