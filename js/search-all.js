@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     let cachedAllRecipes = null;
+    let recipePageMap = {}; // js/recipe-pages.json（〇〇だけ・レンジの、題名→ページ）
 
     function getMatchGroup(text, regex) {
         const m = text.match(regex);
@@ -57,6 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (id) {
                 targetUrl += `&id=${encodeURIComponent(id)}`;
             }
+
+            const mappedPage = (recipePageMap[sourceInfo.pageUrl] || {})[title];
+            if (mappedPage) targetUrl = `${basePath}${mappedPage}`;
 
             if (!extracted.some(r => r.title === title && r.categoryLabel === sourceInfo.categoryLabel)) {
                 extracted.push({
@@ -111,6 +115,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadAllRecipes() {
         if (cachedAllRecipes) return cachedAllRecipes;
+
+        try {
+            const mapRes = await fetch(`${basePath}js/recipe-pages.json`);
+            if (mapRes.ok) recipePageMap = await mapRes.json();
+        } catch (e) {
+            recipePageMap = {};
+        }
 
         const all = [];
         const hasLoadedDietData = typeof recipeData !== 'undefined';

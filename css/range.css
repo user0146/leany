@@ -95,8 +95,7 @@ body {
  padding: 24px 16px 50px;
 }
 .microwave-intro {
- background: var(--cream);
- border: 2px solid var(--mint);
+ 
  border-radius: 20px;
  padding: 24px 16px;
  text-align: center;

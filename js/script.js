@@ -127,8 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const value = button.dataset.filter;
 
       recipeLinks.forEach(link => {
-        const card = link.querySelector('.recipe-card');
-        if (!card) return;
+        const card = link.querySelector('.recipe-card') || link;
         link.hidden = value !== 'all' && card.dataset.category !== value;
       });
     });
