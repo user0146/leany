@@ -113,6 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  
   // =====================================
   // ④ レシピの絞り込み機能
   // =====================================
@@ -121,17 +122,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      filterButtons.forEach(b => b.classList.remove('active'));
+
+      // すべてのボタンからactiveを外す
+      filterButtons.forEach(b => {
+        b.classList.remove('active');
+      });
+
+      // 押したボタンにactiveをつける
       button.classList.add('active');
 
-      const value = button.dataset.filter;
+      // 選択されたカテゴリーを取得
+      const selectedCategory = button.dataset.filter;
 
+      // レシピを絞り込む
       recipeLinks.forEach(link => {
         const card = link.querySelector('.recipe-card') || link;
         link.hidden = value !== 'all' && card.dataset.category !== value;
       });
+
     });
   });
+
 
 
   // =====================================
