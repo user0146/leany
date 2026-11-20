@@ -1,0 +1,104 @@
+/* ==========================================================
+   レシピ一覧のカード（ダイエットページの見た目に合わせた共通部品）
+   ダイエット／材料4つ以内／〇〇だけ／レンジ の一覧ページで共通に使います。
+   見た目を変えたいときは、このファイルだけを直します。
+   ========================================================== */
+:root {
+  --cat-green: #2d5a43;   /* カードの題名 */
+  --cat-mint: #88c9b3;    /* 「レシピを見る」ボタン */
+  --cat-wine: #5d2533;    /* カテゴリのバッジ */
+  --cat-cream: #fff8eb;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 0;
+}
+
+.cat-grid .cat-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cat-grid .cat-card:hover,
+.cat-grid .cat-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.cat-grid .cat-card[hidden] { display: none; }
+
+.cat-card .cat-card-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #eee;
+}
+
+.cat-card .cat-card-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cat-card .cat-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--cat-wine);
+  color: var(--cat-cream);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.cat-card .cat-card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 16px;
+}
+
+.cat-card .cat-card-title {
+  margin: 0 0 6px;
+  color: var(--cat-green);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.cat-card .cat-card-meta,
+.cat-card .cat-card-desc {
+  margin: 0 0 4px;
+  color: #666;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.cat-card .cat-card-desc { margin-bottom: 12px; flex-grow: 1; }
+
+.cat-card .cat-pill {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 6px 12px;
+  border-radius: 15px;
+  background: var(--cat-mint);
+  color: var(--cat-green);
+  font-size: 0.8rem;
+  font-weight: 700;
+}

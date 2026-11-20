@@ -13,6 +13,7 @@
 <script src="js/range.js" defer></script>
 <script src="js/search-all.js" defer></script>
 <link rel="stylesheet" href="css/auth-status.css">
+<link rel="stylesheet" href="css/category.css">
 </head>
 
 <body>
@@ -52,13 +53,11 @@
             <a href="diet.html">ダイエットレシピ</a>
           </li>
           <li class="nav-item active">
-            <a href="材料4つ以内レシピ.html" aria-current="page">材料４つ以内レシピ</a>
+            <a href="材料4つ以内レシピ.html" aria-current="page">
+              材料４つ以内レシピ</a>
           </li>
           <li class="nav-item">
             <a href="range-recipe.html">レンジでレシピ</a>
-          </li>
-          <li class="nav-item">
-            <a href="diagnosis.html">料理診断</a>
           </li>
         </ul>
       </nav>
@@ -155,210 +154,227 @@
         </div>
 
         <!-- レシピ一覧 -->
-        <div class="recipe-grid">
+        <div class="cat-grid">
 
-          <a href="recipe/ハムチーズトースト.html" class="recipe-link">
-            <article class="recipe-card" data-category="パン">
-              <div class="photo-wrap">
-                <img src="images/ハムチーズトースト.jpg" alt="ハムチーズトースト" loading="lazy">
-                <span class="category">パン</span>
-              </div>
-              <h3>ハムチーズトースト</h3>
-              <p class="meta">食材4つ・5分</p>
-              <p class="ingredients">食パン・ハム・チーズ・マヨネーズ</p>
-            </article>
+          <a href="recipe/ハムチーズトースト.html" class="cat-card recipe-link" data-category="パン">
+            <div class="cat-card-img">
+              <img src="images/ハムチーズトースト.jpg" alt="ハムチーズトースト" loading="lazy">
+              <span class="cat-badge category">パン</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">ハムチーズトースト</h3>
+              <p class="cat-card-meta meta">食材4つ・5分</p>
+              <p class="cat-card-desc ingredients">食パン・ハム・チーズ・マヨネーズ</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/卵焼きうどん.html" class="recipe-link">
-            <article class="recipe-card" data-category="麺">
-              <div class="photo-wrap">
-                <img src="images/卵焼きうどん.jpg" alt="卵焼きうどん" loading="lazy">
-                <span class="category">麺</span>
-              </div>
-              <h3>卵焼きうどん</h3>
-              <p class="meta">食材4つ・10分</p>
-              <p class="ingredients">冷凍うどん・卵・ねぎ・マヨネーズ</p>
-            </article>
+          <a href="recipe/卵焼きうどん.html" class="cat-card recipe-link" data-category="麺">
+            <div class="cat-card-img">
+              <img src="images/卵焼きうどん.jpg" alt="卵焼きうどん" loading="lazy">
+              <span class="cat-badge category">麺</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">卵焼きうどん</h3>
+              <p class="cat-card-meta meta">食材4つ・10分</p>
+              <p class="cat-card-desc ingredients">冷凍うどん・卵・ねぎ・マヨネーズ</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/卵わかめスープ.html" class="recipe-link">
-            <article class="recipe-card" data-category="汁物">
-              <div class="photo-wrap">
-                <img src="images/卵わかめスープ.jpg" alt="卵わかめスープ" loading="lazy">
-                <span class="category">汁物</span>
-              </div>
-              <h3>卵わかめスープ</h3>
-              <p class="meta">食材4つ・5分</p>
-              <p class="ingredients">卵・乾燥わかめ・ねぎ・ごま</p>
-            </article>
+          <a href="recipe/卵わかめスープ.html" class="cat-card recipe-link" data-category="汁物">
+            <div class="cat-card-img">
+              <img src="images/卵わかめスープ.jpg" alt="卵わかめスープ" loading="lazy">
+              <span class="cat-badge category">汁物</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">卵わかめスープ</h3>
+              <p class="cat-card-meta meta">食材4つ・5分</p>
+              <p class="cat-card-desc ingredients">卵・乾燥わかめ・ねぎ・ごま</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/卵そぼろ丼.html" class="recipe-link">
-            <article class="recipe-card" data-category="ごはん">
-              <div class="photo-wrap">
-                <img src="images/卵そぼろ丼.jpg" alt="卵そぼろ丼" loading="lazy">
-                <span class="category">ごはん</span>
-              </div>
-              <h3>卵そぼろ丼</h3>
-              <p class="meta">食材4つ・10分</p>
-              <p class="ingredients">ごはん・卵・ひき肉・ねぎ</p>
-            </article>
+          <a href="recipe/卵そぼろ丼.html" class="cat-card recipe-link" data-category="ごはん">
+            <div class="cat-card-img">
+              <img src="images/卵そぼろ丼.jpg" alt="卵そぼろ丼" loading="lazy">
+              <span class="cat-badge category">ごはん</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">卵そぼろ丼</h3>
+              <p class="cat-card-meta meta">食材4つ・10分</p>
+              <p class="cat-card-desc ingredients">ごはん・卵・ひき肉・ねぎ</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/豚もやしポン酢.html" class="recipe-link">
-            <article class="recipe-card" data-category="おかず">
-              <div class="photo-wrap">
-                <img src="images/豚もやしポン酢.jpg" alt="豚もやしポン酢" loading="lazy">
-                <span class="category">おかず</span>
-              </div>
-              <h3>豚もやしポン酢</h3>
-              <p class="meta">食材4つ・5分</p>
-              <p class="ingredients">豚こま肉・もやし・ねぎ・ごま</p>
-            </article>
+          <a href="recipe/豚もやしポン酢.html" class="cat-card recipe-link" data-category="おかず">
+            <div class="cat-card-img">
+              <img src="images/豚もやしポン酢.jpg" alt="豚もやしポン酢" loading="lazy">
+              <span class="cat-badge category">おかず</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">豚もやしポン酢</h3>
+              <p class="cat-card-meta meta">食材4つ・5分</p>
+              <p class="cat-card-desc ingredients">豚こま肉・もやし・ねぎ・ごま</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/豚キムチ丼.html" class="recipe-link">
-            <article class="recipe-card" data-category="ごはん">
-              <div class="photo-wrap">
-                <img src="images/豚キムチ丼.jpg" alt="豚キムチ丼" loading="lazy">
-                <span class="category">ごはん</span>
-              </div>
-              <h3>豚キムチ丼</h3>
-              <p class="meta">食材4つ・10分</p>
-              <p class="ingredients">豚こま肉・ごはん・キムチ・ねぎ</p>
-            </article>
+          <a href="recipe/豚キムチ丼.html" class="cat-card recipe-link" data-category="ごはん">
+            <div class="cat-card-img">
+              <img src="images/豚キムチ丼.jpg" alt="豚キムチ丼" loading="lazy">
+              <span class="cat-badge category">ごはん</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">豚キムチ丼</h3>
+              <p class="cat-card-meta meta">食材4つ・10分</p>
+              <p class="cat-card-desc ingredients">豚こま肉・ごはん・キムチ・ねぎ</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/ツナ卵丼.html" class="recipe-link">
-            <article class="recipe-card" data-category="ごはん">
-              <div class="photo-wrap">
-                <img src="images/ツナ卵丼.jpg" alt="ツナ卵丼" loading="lazy">
-                <span class="category">ごはん</span>
-              </div>
-              <h3>ツナ卵丼</h3>
-              <p class="meta">食材4つ・5分</p>
-              <p class="ingredients">ツナ缶・ごはん・卵・ねぎ</p>
-            </article>
+          <a href="recipe/ツナ卵丼.html" class="cat-card recipe-link" data-category="ごはん">
+            <div class="cat-card-img">
+              <img src="images/ツナ卵丼.jpg" alt="ツナ卵丼" loading="lazy">
+              <span class="cat-badge category">ごはん</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">ツナ卵丼</h3>
+              <p class="cat-card-meta meta">食材4つ・5分</p>
+              <p class="cat-card-desc ingredients">ツナ缶・ごはん・卵・ねぎ</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/ツナマヨトースト.html" class="recipe-link">
-            <article class="recipe-card" data-category="パン">
-              <div class="photo-wrap">
-                <img src="images/ツナマヨトースト.jpg" alt="ツナマヨトースト" loading="lazy">
-                <span class="category">パン</span>
-              </div>
-              <h3>ツナマヨトースト</h3>
-              <p class="meta">食材4つ・5分</p>
-              <p class="ingredients">ツナ缶・食パン・チーズ・マヨネーズ</p>
-            </article>
+          <a href="recipe/ツナマヨトースト.html" class="cat-card recipe-link" data-category="パン">
+            <div class="cat-card-img">
+              <img src="images/ツナマヨトースト.jpg" alt="ツナマヨトースト" loading="lazy">
+              <span class="cat-badge category">パン</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">ツナマヨトースト</h3>
+              <p class="cat-card-meta meta">食材4つ・5分</p>
+              <p class="cat-card-desc ingredients">ツナ缶・食パン・チーズ・マヨネーズ</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/ツナパスタ.html" class="recipe-link">
-            <article class="recipe-card" data-category="麺">
-              <div class="photo-wrap">
-                <img src="images/ツナパスタ.jpg" alt="ツナパスタ" loading="lazy">
-                <span class="category">麺</span>
-              </div>
-              <h3>ツナパスタ</h3>
-              <p class="meta">食材4つ・10分</p>
-              <p class="ingredients">ツナ缶・パスタ・バター・ねぎ</p>
-            </article>
+          <a href="recipe/ツナパスタ.html" class="cat-card recipe-link" data-category="麺">
+            <div class="cat-card-img">
+              <img src="images/ツナパスタ.jpg" alt="ツナパスタ" loading="lazy">
+              <span class="cat-badge category">麺</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">ツナパスタ</h3>
+              <p class="cat-card-meta meta">食材4つ・10分</p>
+              <p class="cat-card-desc ingredients">ツナ缶・パスタ・バター・ねぎ</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/チーズ焼きうどん.html" class="recipe-link">
-            <article class="recipe-card" data-category="麺">
-              <div class="photo-wrap">
-                <img src="images/チーズ焼きうどん.jpg" alt="チーズ焼きうどん" loading="lazy">
-                <span class="category">麺</span>
-              </div>
-              <h3>チーズ焼きうどん</h3>
-              <p class="meta">食材4つ・5分</p>
-              <p class="ingredients">冷凍うどん・豚こま肉・チーズ・ねぎ</p>
-            </article>
+          <a href="recipe/チーズ焼きうどん.html" class="cat-card recipe-link" data-category="麺">
+            <div class="cat-card-img">
+              <img src="images/チーズ焼きうどん.jpg" alt="チーズ焼きうどん" loading="lazy">
+              <span class="cat-badge category">麺</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">チーズ焼きうどん</h3>
+              <p class="cat-card-meta meta">食材4つ・5分</p>
+              <p class="cat-card-desc ingredients">冷凍うどん・豚こま肉・チーズ・ねぎ</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/じゃがチーズ.html" class="recipe-link">
-            <article class="recipe-card" data-category="おかず">
-              <div class="photo-wrap">
-                <img src="images/じゃがチーズ.jpg" alt="じゃがチーズ" loading="lazy">
-                <span class="category">おかず</span>
-              </div>
-              <h3>じゃがチーズ</h3>
-              <p class="meta">食材4つ・5分</p>
-              <p class="ingredients">じゃがいも・チーズ・ベーコン・ねぎ</p>
-            </article>
+          <a href="recipe/じゃがチーズ.html" class="cat-card recipe-link" data-category="おかず">
+            <div class="cat-card-img">
+              <img src="images/じゃがチーズ.jpg" alt="じゃがチーズ" loading="lazy">
+              <span class="cat-badge category">おかず</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">じゃがチーズ</h3>
+              <p class="cat-card-meta meta">食材4つ・5分</p>
+              <p class="cat-card-desc ingredients">じゃがいも・チーズ・ベーコン・ねぎ</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/コーン卵スープ.html" class="recipe-link">
-            <article class="recipe-card" data-category="汁物">
-              <div class="photo-wrap">
-                <img src="images/コーン卵スープ.jpg" alt="コーン卵スープ" loading="lazy">
-                <span class="category">汁物</span>
-              </div>
-              <h3>コーン卵スープ</h3>
-              <p class="meta">食材4つ・5分</p>
-              <p class="ingredients">コーン・卵・ねぎ・牛乳</p>
-            </article>
+          <a href="recipe/コーン卵スープ.html" class="cat-card recipe-link" data-category="汁物">
+            <div class="cat-card-img">
+              <img src="images/コーン卵スープ.jpg" alt="コーン卵スープ" loading="lazy">
+              <span class="cat-badge category">汁物</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">コーン卵スープ</h3>
+              <p class="cat-card-meta meta">食材4つ・5分</p>
+              <p class="cat-card-desc ingredients">コーン・卵・ねぎ・牛乳</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/もやしナムル.html" class="recipe-link">
-            <article class="recipe-card" data-category="おかず">
-              <div class="photo-wrap">
-                <img src="images/もやしナムル.jpg" alt="もやしナムル" loading="lazy">
-                <span class="category">おかず</span>
-              </div>
-              <h3>もやしナムル</h3>
-              <p class="meta">食材2つ・5分</p>
-              <p class="ingredients">もやし・ごま油</p>
-            </article>
+          <a href="recipe/もやしナムル.html" class="cat-card recipe-link" data-category="おかず">
+            <div class="cat-card-img">
+              <img src="images/もやしナムル.jpg" alt="もやしナムル" loading="lazy">
+              <span class="cat-badge category">おかず</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">もやしナムル</h3>
+              <p class="cat-card-meta meta">食材2つ・5分</p>
+              <p class="cat-card-desc ingredients">もやし・ごま油</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/親子丼.html" class="recipe-link">
-            <article class="recipe-card" data-category="ごはん">
-              <div class="photo-wrap">
-                <img src="images/親子丼.jpg" alt="親子丼" loading="lazy">
-                <span class="category">ごはん</span>
-              </div>
-              <h3>親子丼</h3>
-              <p class="meta">食材3つ・10分</p>
-              <p class="ingredients">鶏もも肉・玉ねぎ・卵</p>
-            </article>
+          <a href="recipe/親子丼.html" class="cat-card recipe-link" data-category="ごはん">
+            <div class="cat-card-img">
+              <img src="images/親子丼.jpg" alt="親子丼" loading="lazy">
+              <span class="cat-badge category">ごはん</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">親子丼</h3>
+              <p class="cat-card-meta meta">食材3つ・10分</p>
+              <p class="cat-card-desc ingredients">鶏もも肉・玉ねぎ・卵</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/バター醤油チャーハン.html" class="recipe-link">
-            <article class="recipe-card" data-category="ごはん">
-              <div class="photo-wrap">
-                <img src="images/バター醤油チャーハン.jpg" alt="バター醤油チャーハン" loading="lazy">
-                <span class="category">ごはん</span>
-              </div>
-              <h3>バター醤油チャーハン</h3>
-              <p class="meta">食材3つ・10分</p>
-              <p class="ingredients">ベーコン・ねぎ・卵</p>
-            </article>
+          <a href="recipe/バター醤油チャーハン.html" class="cat-card recipe-link" data-category="ごはん">
+            <div class="cat-card-img">
+              <img src="images/バター醤油チャーハン.jpg" alt="バター醤油チャーハン" loading="lazy">
+              <span class="cat-badge category">ごはん</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">バター醤油チャーハン</h3>
+              <p class="cat-card-meta meta">食材3つ・10分</p>
+              <p class="cat-card-desc ingredients">ベーコン・ねぎ・卵</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/アボカド納豆しらす丼.html" class="recipe-link">
-            <article class="recipe-card" data-category="ごはん">
-              <div class="photo-wrap">
-                <img src="images/アボカド納豆しらす丼.jpg" alt="アボカド納豆しらす丼" loading="lazy">
-                <span class="category">ごはん</span>
-              </div>
-              <h3>アボカド納豆しらす丼</h3>
-              <p class="meta">食材4つ・5分</p>
-              <p class="ingredients">アボカド・納豆・しらす・ごはん</p>
-            </article>
+          <a href="recipe/アボカド納豆しらす丼.html" class="cat-card recipe-link" data-category="ごはん">
+            <div class="cat-card-img">
+              <img src="images/アボカド納豆しらす丼.jpg" alt="アボカド納豆しらす丼" loading="lazy">
+              <span class="cat-badge category">ごはん</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">アボカド納豆しらす丼</h3>
+              <p class="cat-card-meta meta">食材4つ・5分</p>
+              <p class="cat-card-desc ingredients">アボカド・納豆・しらす・ごはん</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
-          <a href="recipe/トマツナのリゾット風.html" class="recipe-link">
-            <article class="recipe-card" data-category="ごはん">
-              <div class="photo-wrap">
-                <img src="images/トマツナのリゾット風.jpg" alt="トマツナのリゾット風" loading="lazy">
-                <span class="category">ごはん</span>
-              </div>
-              <h3>トマツナのリゾット風</h3>
-              <p class="meta">食材4つ・10分</p>
-              <p class="ingredients">ツナ缶・トマト缶・玉ねぎ・ピザ用チーズ</p>
-            </article>
+          <a href="recipe/トマツナのリゾット風.html" class="cat-card recipe-link" data-category="ごはん">
+            <div class="cat-card-img">
+              <img src="images/トマツナのリゾット風.jpg" alt="トマツナのリゾット風" loading="lazy">
+              <span class="cat-badge category">ごはん</span>
+            </div>
+            <div class="cat-card-body">
+              <h3 class="cat-card-title">トマツナのリゾット風</h3>
+              <p class="cat-card-meta meta">食材4つ・10分</p>
+              <p class="cat-card-desc ingredients">ツナ缶・トマト缶・玉ねぎ・ピザ用チーズ</p>
+              <span class="cat-pill">レシピを見る</span>
+            </div>
           </a>
 
         </div>
@@ -382,11 +398,6 @@
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="js/supabase-client.js"></script>
-<script src="js/auth-status.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/supabase-client.js"></script>
 <script src="js/auth-status.js"></script>
 

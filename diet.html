@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ダイエットレシピ | Learny</title>
-
-    <link rel="icon" href="images/キャラデザ（ファビコン用）.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/auth-status.css">
-
-    <script src="js/diet.js" defer></script>
-    <script src="js/script.js" defer></script>
-    <script src="js/search.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ダイエットレシピ | Learny</title>
+<link rel="icon" href="images/キャラデザ（ファビコン用）.png">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/cards.js" defer></script>
+<script src="js/diet.js" defer></script>
+<script src="js/script.js" defer></script>
+<script src="js/search.js" defer></script>
+<script src="js/only.js" defer></script>
+<script src="js/range.js" defer></script>
+<script src="js/search-all.js" defer></script>
+<link rel="stylesheet" href="css/auth-status.css">
+<link rel="stylesheet" href="css/category.css">
 </head>
 
 <body class="recipe-detail-body">
@@ -56,41 +59,30 @@
        <li class="nav-item">
        <a href="range-recipe.html">レンジでレシピ</a>
        </li>
-       <li class="nav-item">
-            <a href="diagnosis.html">料理診断</a>
-       </li>
      </ul>
    </nav>
 
 </header>
    
-<div class="global-search" style="display: flex; justify-content: center; align-items: center; gap: 5px; padding: 15px 5%;">
-<input type="text" id="search-input" placeholder="Learny全体を検索..." style="width: 240px; padding:10px 15px; border:1px solid #ccc; border-radius:20px; outline:none;">
-<button type="button" id="search-btn" style="border: none; background: #83bfa5; padding: 10px 15px; border-radius: 50%; cursor: pointer;">🔍</button>
-</div> 
-<div id="search-results" class="global-search-results"></div>
+
 <!-- ダイエットレシピ一覧 -->
 <main class="recipe-container" id="all-recipes-container">
 <!-- レシピは search.js / diet.js から表示 -->
 </main>
-
 <!-- ダイエットを成功させるコツ -->
 <section class="diet-tips-section">
 <h2 class="diet-section-title">ダイエットを成功させるコツ（具材の選び方）</h2>
-
- <div class="diet-tips-grid">
-  <!-- タンパク質 -->
- <article class="diet-tip-card">
-  <div class="diet-tip-icon">
-  <img src="images/food-icon.png" alt="タンパク質">
- </div>
-
-  <h3>タンパク質（筋肉を維持する）</h3>
-  <p>選ぶもの：鶏ささみ、鶏むね肉（皮なし）、白身魚、青魚、大豆、豆腐、納豆、卵</p>
-  <p>コツ：牛バラ肉など脂質の多い部位ばかりに偏らず、赤身やささみなども取り入れましょう。</p>
- </article>
-
- <!-- 食物繊維 -->
+<div class="diet-tips-grid">
+<!-- タンパク質 -->
+<article class="diet-tip-card">
+<div class="diet-tip-icon">
+<img src="images/food-icon.png" alt="タンパク質">
+</div>
+<h3>タンパク質（筋肉を維持する）</h3>
+<p>選ぶもの：鶏ささみ、鶏むね肉（皮なし）、白身魚、青魚、大豆、豆腐、納豆、卵</p>
+<p>コツ：牛バラ肉など脂質の多い部位ばかりに偏らず、赤身やささみなども取り入れましょう。</p>
+</article>
+<!-- 食物繊維 -->
 <article class="diet-tip-card">
 <div class="diet-tip-icon">
 <img src="images/food-icon.png" alt="食物繊維">
