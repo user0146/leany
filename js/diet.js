@@ -3,7 +3,7 @@ const recipeData = {
  "tofu-cheese": {
    title: "豆腐のお好み焼きボウル",
    subtitle: "ヘルシーで満足感たっぷり",
-   image: "images/detail006_img_001.jpg",
+   image: "images/豆腐お好み焼きボウル.jpg",
    ingredients: [
      { name: "豆腐", amount: "150g" },
      { name: "豚肉", amount: "70g" },
@@ -27,7 +27,7 @@ const recipeData = {
  "tonyu-enoki": {
    title: "豆乳明太クリームえのき",
    subtitle: "レンジで簡単、濃厚クリーミー",
-   image: "images/1c908bffb8307a1b46fff68a4d3f1e7f.avif",
+   image: "images/豆乳明太クリームえのき.jpg",
    ingredients: [
      { name: "えのき", amount: "一袋" },
      { name: "豆乳", amount: "50ml" },
@@ -44,7 +44,7 @@ const recipeData = {
  "tyoukatu-doria": {
    title: "腸活ミラノ風ドリア",
    subtitle: "えのきでかさ増しヘルシードリア",
-   image: "images/otonarosy_saiseria_healthy_cooking_02.webp",
+   image: "images/ミラノ風ドリア.jpg",
    ingredients: [
      { name: "♥ご飯", amount: "80g" },
      { name: "♥えのき", amount: "1/2袋" },
@@ -67,7 +67,7 @@ const recipeData = {
  "oatmeal": {
    title: "オートミールスープ",
    subtitle: "スープジャーで放置するだけ",
-   image: "images/recipe_main_image_804052.jpg",
+   image: "images/オートミールスープ.jpg",
    ingredients: [
      { name: "オートミール", amount: "30g" },
      { name: "ノンオイルツナ缶", amount: "一缶" },
@@ -82,7 +82,7 @@ const recipeData = {
  "kimuchi-rice": {
    title: "おなかが膨れるキムチ雑炊",
    subtitle: "低カロリーで大満足",
-   image: "images/4902705018976_01.jpg",
+   image: "images/キムチ雑炊.jpg",
    ingredients: [
      { name: "ご飯", amount: "100g" },
      { name: "キムチ", amount: "お好みの量" },
@@ -101,7 +101,7 @@ const recipeData = {
  "enoki-cheese": {
    title: "エノキで腸活！カリモチ豆腐とエノキのチーズ焼き",
    subtitle: "カリカリもちもち食感",
-   image: "images/GxuZ8Ct0y.webp",
+   image: "images/豆腐とエノキのチーズ焼き.jpg",
    ingredients: [
      { name: "絹豆腐", amount: "150g" },
      { name: "えのき", amount: "一袋" },
@@ -120,7 +120,7 @@ const recipeData = {
  "shyoga-soup": {
    title: "えのき白菜の生姜スープ",
    subtitle: "生姜の力で体の芯から温まる",
-   image: "images/images.jpg",
+   image: "images/エノキ白菜の生姜スープ.jpg",
    ingredients: [
      { name: "白菜", amount: "1/8切れ" },
      { name: "えのき", amount: "一袋" },
@@ -144,7 +144,7 @@ const recipeData = {
  "kim-tonpei": {
    title: "キムとんぺい",
    subtitle: "レンジで作れるヘルシーとんぺい焼き",
-   image: "images/compressed_thumbnail_square_large.jpg",
+   image: "images/キムトンペイ.jpg",
    ingredients: [
      { name: "卵", amount: "2個" },
      { name: "えのき", amount: "一袋" },
@@ -166,7 +166,7 @@ const recipeData = {
  "tamachiki-salada": {
    title: "たまチキクリームサラダ",
    subtitle: "高タンパクで濃厚な味わい",
-   image: "images/QP10008576_1L.jpg",
+   image: "images/たまチキクリームサラダ.jpg",
    ingredients: [
      { name: "ゆで卵", amount: "2個" },
      { name: "ささみ", amount: "2本" },
@@ -191,7 +191,7 @@ const recipeData = {
  "moya-kimuchinatto": {
    title: "もやしキムチ納豆",
    subtitle: "包丁いらずのスピード腸活おかず",
-   image: "images/20160401.jpg",
+   image: "images/もやしキムチ納豆.jpg",
    ingredients: [
      { name: "もやし", amount: "一袋" },
      { name: "キムチ", amount: "お好みの量" },
@@ -212,7 +212,7 @@ const recipeData = {
  "rose-harusame": {
    title: "ロゼキムチ春雨",
    subtitle: "レンジで即席、人気のロゼ風",
-   image: "images/images (1).jpg",
+   image: "images/ロゼキムチ春雨.jpg",
    ingredients: [
      { name: "春雨", amount: "4玉" },
      { name: "キムチ", amount: "50g" },
@@ -229,7 +229,7 @@ const recipeData = {
  "natto-soborodon": {
    title: "簡単満足感！納豆そぼろ丼",
    subtitle: "ヘルシーひき肉と納豆のコラボ",
-   image: "images/PS_KCW_0907M.jpg",
+   image: "images/納豆そぼろ丼.jpg",
    ingredients: [
      { name: "鶏むねひき肉", amount: "50g" },
      { name: "納豆", amount: "一パック" },
@@ -252,7 +252,7 @@ const recipeData = {
  "hikiniku-bibinva": {
    title: "旨×軽 鶏ひき肉ヘルシービビンバ",
    subtitle: "牛肉要らずの満足感！！脂質オフ",
-   image: "images/2408_04_bibimbap_13.jpg",
+   image: "images/ヘルシービビンバ.jpg",
    ingredients: [
      { name: "鶏むねひき肉", amount: "100g" },
      { name: "ほうれん草", amount: "25g" },
@@ -273,7 +273,7 @@ const recipeData = {
  "tomatocheese-rezotto": {
    title: "チーズなのに罪悪感ゼロ　神痩せトマトチーズリゾット",
    subtitle: "濃厚なのにカロリーオフ！大満足の痩せスープ飯",
-   image: "images/recipe_main_image_805600.webp",
+   image: "images/トマトチーズリゾット.jpg",
    ingredients: [
      { name: "トマトジュース(無塩)", amount: "200ml" },
      { name: "ご飯", amount: "80g" },
@@ -295,7 +295,7 @@ const recipeData = {
  "sweet-potatocake": {
    title: "神痩せ！！スイートポテトチーズケーキ",
    subtitle: "ダイエット中も我慢しない感動のしっとり食感",
-   image: "images/images (2).jpg",
+   image: "images/スイートポテトチーズケーキ.jpg",
    ingredients: [
      { name: "サツマイモ", amount: "300g" },
      { name: "牛乳(豆乳でも可)", amount: "180ml" },
@@ -314,7 +314,7 @@ const recipeData = {
  "kinako-chocomochi": {
    title: "もっちもちで大満足！太らない魔法のきな粉餅＆チョコ餅",
    subtitle: "驚きの低カロリー　至福の和風スイーツ",
-   image: "images/ogkQWdvWAHA9AbQ3gILMSCSGreZ4ffQICrEBJQ~tplv-sdweummd6v-text-logo-v1_QHVzZXIzNDQ4NDE3MTk3NDgx_q75.jpeg",
+   image: "images/きな粉餅チョコ餅.jpg",
    ingredients: [
      { name: "【きな粉餅】", amount: "" },
      { name: "絹豆腐", amount: "150g" },
@@ -343,7 +343,7 @@ const recipeData = {
  "yamaimotororo-teppan": {
    title: "小麦粉なしで超ヘルシー！！ふわふわ山芋とろろ鉄板",
    subtitle: "糖質オフなのに大満足のボリューム　おなか一杯食べても罪悪感ゼロ！！！",
-   image: "images/7862147d1ca37f60e336cc04911d2155.jpg",
+   image: "images/山芋とろろ鉄板.jpg",
    ingredients: [
      { name: "卵", amount: "2個" },
      { name: "かつお節", amount: "一パック" },
@@ -360,7 +360,7 @@ const recipeData = {
  "sakekinoko-deshijyouyu": {
    title: "栄養満点＆ヘルシー！！鮭ときのこだし醤油丼",
    subtitle: "糖質や脂質を控えたいときにおすすめ！！",
-   image: "images/00050379.avif",
+   image: "images/鮭ときのこだし醤油丼.jpg",
    ingredients: [
      { name: "鮭", amount: "一切れ" },
      { name: "えのき", amount: "1/3" },
@@ -383,7 +383,7 @@ const recipeData = {
  "cream-rezooto": {
    title: "どろ旨濃厚な激やせクリームリゾット",
    subtitle: "我慢しない大人の本気ダイエット主食！！",
-   image: "images/1.jpg",
+   image: "images/クリームリゾット.jpg",
    ingredients: [
      { name: "ピザ用チーズ", amount: "適量" },
      { name: "卵黄", amount: "一つ" },
@@ -405,7 +405,7 @@ const recipeData = {
  "tonyutantan-soup": {
    title: "お店クオリティの痩せる豆乳坦々スープ",
    subtitle: "ひと手間でダイエット食の域を超える！濃厚で奥深い至高の旨辛スープ",
-   image: "images/おかずになる豆乳担々スープ_02.jpg",
+   image: "images/豆乳坦々スープ.jpg",
    ingredients: [
      { name: "キャベツ", amount: "1/4玉" },
      { name: "ニラ", amount: "一袋" },
@@ -434,7 +434,7 @@ const recipeData = {
  "to-fu-steak": {
    title: "旨みじゅわっと溢れる！本気の痩せる豆腐ステーキ",
    subtitle: "おなかいっぱい食べでも罪悪感ゼロのスタミナ飯",
-   image: "images/05418_l.jpg",
+   image: "images/豆腐ステーキ.jpg",
    ingredients: [
      { name: "豆腐", amount: "一丁" },
      { name: "片栗粉", amount: "適量" },
@@ -454,7 +454,7 @@ const recipeData = {
  "nikumiso-salada": {
    title: "自分を労わるご褒美ヘルシー。贅沢仕立ての痩せる肉味噌サラダ",
    subtitle: "我慢ゼロで心も満たされる大人の主菜",
-   image: "images/6017c.jpg",
+   image: "images/肉味噌サラダ.jpg",
    ingredients: [
      { name: "千切りキャベツ", amount: "一袋" },
      { name: "豚ロース", amount: "5枚" },
@@ -473,7 +473,7 @@ const recipeData = {
  "natsukyabe-salada": {
    title: "ひと手間で劇的においしくなる！極旨ヘルシー納豆キャベツサラダ",
    subtitle: "腸活＆ダイエットに最適な妥協なしの味。",
-   image: "images/cc6b84e8ca19a95e4302ec960942ec89.avif",
+   image: "images/納豆キャベツサラダ.jpg",
    ingredients: [
      { name: "千切りキャベツ", amount: "一袋" },
      { name: "納豆", amount: "2パック" },
