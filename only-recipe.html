@@ -8,12 +8,17 @@
   <link rel="stylesheet" href="css/only.css">
   <link rel="stylesheet" href="css/auth-status.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/only.js" defer></script>
+<script src="js/cards.js" defer></script>
+<script src="js/only.js" defer></script>
+<script src="js/range.js" defer></script>
+  <script src="js/diet.js" defer></script>
   <script src="js/script.js" defer></script>
   <script src="js/search-all.js" defer></script>
+<link rel="stylesheet" href="css/category.css">
 </head>
 
-<body class="only-recipe-page">
+<body>
+
   <!-- ヘッダー -->
   <div class="home-screen">
     <header class="app-header">
@@ -35,6 +40,9 @@
           <li class="nav-item">
             <a href="index.html">Home</a>
           </li>
+          <li class="nav-item">
+          <a href="diagnosis.html">今日のごはん診断</a>
+          </li>
           <li class="nav-item active">
             <a href="only-recipe.html" aria-current="page">〇〇だけレシピ</a>
           </li>
@@ -51,9 +59,6 @@
           <li class="nav-item">
             <a href="range-recipe.html">レンジでレシピ</a>
           </li>
-          <li class="nav-item">
-            <a href="diagnosis.html">料理診断</a>
-          </li>
         </ul>
       </nav>
     </header>
@@ -66,6 +71,7 @@
 <h2>〇〇だけレシピ</h2>
 <p>身近な食材で、簡単おいしい料理！</p>
 </section>
+
 <!-- 4つのカテゴリー -->
 <section class="category-section" id="categories">
 <h2 class="section-heading">カテゴリーから選ぶ</h2>
@@ -128,7 +134,7 @@
 </button>
 <a class="back-home" href="index.html">ホームに戻る</a>
 </main>
-  </div>
+
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/supabase-client.js"></script>
 <script src="js/auth-status.js"></script>

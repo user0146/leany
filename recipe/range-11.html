@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レンジ豚丼 | Learny</title>
+    <link rel="icon" href="../images/キャラデザ（ファビコン用）.png">
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/recipe-extra.css">
+    <link rel="stylesheet" href="../css/auth-status.css">
+    <link rel="stylesheet" href="../css/reviewphoto.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- 三本線メニューボタンとタイトル -->
+    <header class="app-header">
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="メニューを開く">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <h1 class="header-title">Learny</h1>
+        <div id="auth-status" class="auth-status" data-auth-url="../auth.html"></div>
+    </header>
+
+    <!-- スライドメニュー -->
+    <nav id="slide-menu" class="slide-menu">
+        <ul class="menu-list">
+            <li><a href="../index.html">🍳 レシピ一覧</a></li>
+            <li><a href="../diet.html">🥗 ダイエットレシピ</a></li>
+            <li><a href="../材料4つ以内レシピ.html">材料4つ以内レシピ</a></li>
+            <li><a href="../vegetable.html">🥬 おいしい野菜の見分け方</a></li>
+            <li><a href="../diagnosis.html">🔍 料理提案診断</a></li>
+        </ul>
+    </nav>
+
+    <div id="menu-overlay" class="menu-overlay"></div>
+
+    <!-- 料理の画像 -->
+    <div class="menu-img">
+        <img src="../images/buta-don.jpg" alt="レンジ豚丼">
+    </div>
+
+    <!-- 料理名 -->
+    <h1 class="menu-title">
+        レンジ豚丼
+    </h1>
+
+    <p class="menu-subtitle">レンジで簡単に作れる、豚丼です。</p>
+
+    <!-- カテゴリ・材料数 -->
+    <div class="recipe-meta">
+        <span>レンジ</span>
+        <span>材料5品</span>
+    </div>
+
+    <!-- 材料 -->
+    <div class="mat">
+        <h2>材料</h2>
+        <div class="ingredient-row">
+            <span>・ご飯</span>
+            <span>1杯</span>
+        </div>
+
+        <div class="ingredient-row">
+            <span>・しょうゆ</span>
+            <span>大さじ1</span>
+        </div>
+
+        <div class="ingredient-row">
+            <span>・みりん</span>
+            <span>大さじ1</span>
+        </div>
+
+        <div class="ingredient-row">
+            <span>・砂糖</span>
+            <span>小さじ1</span>
+        </div>
+
+        <div class="ingredient-row">
+            <span>・酒</span>
+            <span>大さじ1</span>
+        </div>
+
+    </div>
+
+    <!-- 作り方 -->
+    <div class="recipe">
+        <h2>作り方</h2>
+        <p class="step">
+            <strong>①</strong>
+            耐熱容器に豚肉と調味料を入れて混ぜる。
+        </p>
+
+        <p class="step">
+            <strong>②</strong>
+            ふんわりラップして600Wで3分加熱する。
+        </p>
+
+        <p class="step">
+            <strong>③</strong>
+            一度混ぜ、さらに1分ほど加熱する。
+        </p>
+
+        <p class="step">
+            <strong>④</strong>
+            豚肉に火が通ったらご飯にのせて完成！
+        </p>
+
+    </div>
+
+    <!-- レビュー -->
+    <section class="review-section" aria-label="レビュー">
+      <h2>みんなのレビュー ⭐</h2>
+      <div class="review-summary">
+        <div class="review-stars" id="average-stars">☆☆☆☆☆</div>
+        <p><strong id="review-average">まだ評価はありません</strong></p>
+        <p id="review-count">レビュー 0件</p>
+      </div>
+      <form id="review-form" class="review-form">
+        <h3>レビューを投稿する</h3>
+        <label for="review-name">お名前</label>
+        <input id="review-name" maxlength="30" required placeholder="ニックネーム">
+        <label for="review-rating">星の数</label>
+        <select id="review-rating" required>
+          <option value="5">★★★★★（5）</option>
+          <option value="4">★★★★☆（4）</option>
+          <option value="3">★★★☆☆（3）</option>
+          <option value="2">★★☆☆☆（2）</option>
+          <option value="1">★☆☆☆☆（1）</option>
+        </select>
+        <label for="review-comment">コメント</label>
+        <textarea id="review-comment" maxlength="1000" required placeholder="作ってみた感想を教えてね！"></textarea>
+        <button id="review-submit" type="submit">レビューを投稿する</button>
+        <p id="review-message" role="status" aria-live="polite"></p>
+      </form>
+      <div class="review-list">
+        <h3>投稿されたレビュー</h3>
+        <div id="review-items">
+          <p>読み込み中...</p>
+        </div>
+      </div>
+    </section>
+
+    <p class="back-to-list"><a href="../range-recipe.html">← レンジでレシピ一覧に戻る</a></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase-client.js"></script>
+    <script src="../js/auth-status.js"></script>
+    <script src="../js/review.js"></script>
+</body>
+</html>
