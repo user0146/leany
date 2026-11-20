@@ -763,33 +763,14 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("category-title").textContent =
         categoryNames[category];
     dishList.replaceChildren();
-    recipes[category].forEach(recipe => {
-        const button = document.createElement("button");
-        button.className = "dish-card";
-        button.type = "button";
-        // 料理画像
-        const img = document.createElement("img");
-        img.className = "dish-image";
-        img.src = recipe.image;
-        img.alt = recipe.title;
-        img.loading = "lazy";
-        // 画像が見つからない場合
-        img.onerror = () => {
-            img.style.display = "none";
-        };
-        // 料理名
-        const name = document.createElement("span");
-        name.className = "dish-name";
-        name.textContent = recipe.title;
-        // レシピへの案内
-        const arrow = document.createElement("span");
-        arrow.className = "dish-arrow";
-        arrow.textContent = "レシピを見る →";
-        button.append(img, name, arrow);
-        button.addEventListener("click", () => {
-            showRecipe(recipe);
-        });
-        dishList.appendChild(button);
+    dishList.className = "cat-grid";
+    recipes[category].forEach((recipe, index) => {
+        dishList.appendChild(createRecipeCard({
+            href: `recipe/only-${category}-${String(index + 1).padStart(2, "0")}.html`,
+            image: recipe.image,
+            title: recipe.title,
+            description: recipe.description
+        }));
     });
     document.querySelectorAll(".category-card").forEach(card => {
         card.classList.toggle(

@@ -754,20 +754,14 @@ const dishList = document.getElementById("dish-list");
 const recipeDetail = document.getElementById("recipe-detail");
 function showDishes() {
   dishList.innerHTML = "";
+  dishList.className = "cat-grid";
   recipes.forEach((recipe) => {
-    const card = document.createElement("button");
-    card.type = "button";
-    card.className = "dish-card";
-    const image = document.createElement("img");
-    image.className = "dish-image";
-    image.src = recipe.image;
-    image.alt = recipe.title;
-    const name = document.createElement("span");
-    name.className = "dish-name";
-    name.textContent = recipe.title;
-    card.append(image, name);
-    card.addEventListener("click", () => showRecipe(recipe));
-    dishList.appendChild(card);
+    dishList.appendChild(createRecipeCard({
+      href: `recipe/range-${String(recipe.id).padStart(2, "0")}.html`,
+      image: recipe.image,
+      title: recipe.title,
+      description: recipe.description
+    }));
   });
 }
 

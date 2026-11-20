@@ -41,10 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     let cachedAllRecipes = null;
+    let recipePageMap = {}; // js/recipe-pages.json（〇〇だけ・レンジの、題名→ページ）
 
-    // レシピ名と個別ページの対応表
-    let recipePageMap = {};
-
+    
 
     // 正規表現で情報を取得
     function getMatchGroup(text, regex) {
@@ -280,6 +279,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
 
+
+        try {
+            const mapRes = await fetch(`${basePath}js/recipe-pages.json`);
+            if (mapRes.ok) recipePageMap = await mapRes.json();
+        } catch (e) {
+            recipePageMap = {};
+        }
 
         const all = [];
 

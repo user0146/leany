@@ -136,13 +136,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // レシピを絞り込む
       recipeLinks.forEach(link => {
-        const category = link.dataset.category;
-
-        if (selectedCategory === 'all' || category === selectedCategory) {
-          link.hidden = false;
-        } else {
-          link.hidden = true;
-        }
+        const card = link.querySelector('.recipe-card') || link;
+        link.hidden = value !== 'all' && card.dataset.category !== value;
       });
 
     });
